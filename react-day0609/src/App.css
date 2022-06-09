@@ -1,0 +1,40 @@
+.number{
+  font-size: 60px;
+  color: rebeccapurple;
+  font-weight: bold;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  text-shadow: 5px 5px 5px gray;
+  font-family: 'Gowun Dodum';
+}
+.alert{
+  font-family: 'Gowun Dodum';
+}
+button{
+  font-family: 'Gowun Dodum';
+}
+*{
+  font-family: 'Gowun Dodum';
+}
+
+.form-control{
+  margin-left: 10px;
+}
+b{
+  margin-left: 10px;
+}
+.result{
+  font-weight: bolder;
+  margin-left: 100px;
+}
+.photo{
+  width: 200px;
+  position: absolute;
+  left: 400px;
+  top: 300px;
+}
+.greenline{
+  
+  border-width: 10px;
+  margin-left: 30px;
+}
