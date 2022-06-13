@@ -1,0 +1,17 @@
+*{
+  font-family: 'Gowun Dodum';
+  
+}
+
+.number{
+  font-size: 40px;
+  color: tomato;
+  font-weight: bold;
+  margin-left: 100px;
+}
+.line{
+  border: 3px solid gray;
+  padding: 5px;
+  text-align: center;
+  font-family: 'Gowun Dodum';
+}

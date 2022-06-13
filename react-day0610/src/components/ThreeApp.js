@@ -149,9 +149,7 @@ const ThreeApp=()=>{ //수우우우우
     </Card>
     
             
-           
-           
-           <br></br>
+        <br></br>
     <div className='food'>
         <h3><b>좋아하는 음식을 선택하세요</b></h3>
         <select className="form-control" 
