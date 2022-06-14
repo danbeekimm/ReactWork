@@ -37,12 +37,13 @@ const SevenApp=()=>{
             ...data, //name',photo,blood 가 writeform과 같음 그래서 ...data만써도됨
             today:new Date()
         }));
-    
-    const dataRemove = (index) =>{
-        setBoard(board.filter((item,i)=>i!==index)); 
+    }
+    const dataDelete = (index) =>{
+        setBoard(board.filter((item,i)=>i!==index));  //같지않ㅇ느것만 걸러내기. 이러면 보드에서 i와 idx와 같은 번지만 빼고
+        //나머지만 들어가는거임.
     }
 
-    }
+    
 
     
     return(
@@ -57,13 +58,13 @@ const SevenApp=()=>{
                     <th width='120'>사진</th>
                     <th width='70'>혈액형</th>
                     <th width='100'>날짜</th>
-                    <th width='70' onClick={()=>dataRemove(index)}
+                    <th width='70'
                     >삭제</th>
                 </tr>
             </thead>
             <tbody>
                 { //배열 안 객체 단위로 넘기는것임
-                    board.map((row,index)=>(<RowItemApp row={row} key={index}/>))
+                    board.map((row,index)=>(<RowItemApp row={row} key={index} index={index} onDelete={dataDelete}/>))
                 }
             </tbody>
         </table>

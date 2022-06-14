@@ -7,10 +7,12 @@ import FourApp from './components/FourApp';
 import FiveApp from './components/FiveApp';
 import SixApp from './components/SixApp';
 import SevenApp from './components/SevenApp';
+import EightApp from './components/EightApp';
+
 
 //고정할때 usestate에 숫자와 defaultChecked 주면 됨.
 function App() {
-  const [idx, setIdx] = useState(7);
+  const [idx, setIdx] = useState(8);
 
   const selectComponent=(e)=>{
     console.log(e.target.value);
@@ -38,11 +40,15 @@ function App() {
           <input type='radio'name='comp' defaultValue='6'   onClick={selectComponent}/>SixApp
         </label>
         <label>
-          <input type='radio'name='comp' defaultValue='7'  defaultChecked onClick={selectComponent}/>SevenApp
+          <input type='radio'name='comp' defaultValue='7'   onClick={selectComponent}/>SevenApp
         </label>
+        <label>
+          <input type='radio'name='comp' defaultValue='8'  defaultChecked onClick={selectComponent}/>EightApp
+        </label>
+       
       </div>
       <hr style={{backgroundColor:'pink'}}/>
-      {idx===1?<OneApp/>:idx===2?<TwoApp/>:idx===3?<ThreeApp/>:idx===4?<FourApp/>:idx===5?<FiveApp/>:idx===6?<SixApp/>:<SevenApp/>}
+      {idx===1?<OneApp/>:idx===2?<TwoApp/>:idx===3?<ThreeApp/>:idx===4?<FourApp/>:idx===5?<FiveApp/>:idx===6?<SixApp/>:idx===7?<SevenApp/>:<EightApp/>}
     </div>
   );
 }
