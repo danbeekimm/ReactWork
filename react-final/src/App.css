@@ -1,0 +1,61 @@
+*{
+  font-family: 'Gowun Dodum';
+  
+}
+
+div.title{
+  text-align: center;
+}
+
+div.menu{
+  position: absolute;
+  top: 320px;
+  left: 100px;
+  width: 1500px;
+  height: 100px;
+}
+
+div.info{
+  position: absolute;
+  top: 430px;
+  left: 20px;
+  width: 250px;
+  height: 300px;
+}
+
+div.main{
+  position: absolute;
+  top: 430px;
+  left: 550px;
+  width: 1000px;
+  height: 500px;
+}
+
+.menu{
+  list-style: none;
+  text-align: center;
+}
+
+ul.menu li{
+  float: left;
+  color: aliceblue; 
+  
+  word-spacing: 20px;
+  text-align: center;
+  
+}
+ul.manu li *{
+  color: aliceblue;
+  word-spacing: 20px;
+}
+
+ul.manu li *:hover{
+  color: aliceblue;
+}
+
+div.divManu{
+  text-align: center;
+}
+a{
+  color: aliceblue;
+}
