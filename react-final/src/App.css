@@ -40,7 +40,7 @@ ul.menu li{
   float: left;
   color: aliceblue; 
   
-  word-spacing: 20px;
+  word-spacing: 37px;
   text-align: center;
   
 }
@@ -58,4 +58,39 @@ div.divManu{
 }
 a{
   color: aliceblue;
+}
+
+a:hover{
+  color: aliceblue;
+}
+
+a:-moz-focus-outer{
+  color: aliceblue;
+}
+
+img.small{
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  margin-right: 10px;
+}
+
+img.small{
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  margin-right: 10px;
+
+}
+
+img.large{
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 2px solid gray;
+}
+
+.detail button{
+  width: 100px;
+  margin-right: 5px;
 }
