@@ -5,6 +5,7 @@ import axios from "axios";
 import ShopRowItem from "./ShopRowItem";
 
 const Shop=()=>{
+    
     const navi=useNavigate();
     //백엔드에서 받아올 리스트 데이타 변수
     const [shopList,setShopList]=useState([]);

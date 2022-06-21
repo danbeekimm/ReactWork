@@ -6,6 +6,7 @@ const ShopRowItem=({idx,row})=>{
     const navi=useNavigate();
     let photoUrl="http://localhost:9001/save/";
     return(
+        
         <tr>
             <td>{idx+1}</td>
             <td>
@@ -20,6 +21,7 @@ const ShopRowItem=({idx,row})=>{
                 }}>detail</button>
             </td>
         </tr>
+        
     )
 }
 export default ShopRowItem;

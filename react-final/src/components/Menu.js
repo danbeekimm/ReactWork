@@ -41,8 +41,9 @@ const Menu=()=>{
                 
                 <AppBar position="static" float="left" color="primary">
                   {(<ul className='menu'  style={{listStyle:'none',float:'left',}}>
-                 
+
                 <li> &nbsp;&nbsp;&nbsp;&nbsp;<NavLink to='/'>Home</NavLink>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><NavLink to='/memo'>Memo</NavLink>&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li><NavLink to='/login'>Login</NavLink>&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li><NavLink to='/member/form'>Member</NavLink>&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li><NavLink to='/shop/list'>Shop</NavLink>&nbsp;&nbsp;&nbsp;&nbsp;</li>

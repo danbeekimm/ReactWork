@@ -10,8 +10,8 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 
 const ShopDetail = () =>{
-
-
+    //.env 파일에서 전역변수 값 가져오기
+    const SPRING_URL=process.env.REACT_APP_SPRING_URL;
     const navi = useNavigate();
     const {num} = useParams();
     const [data, setData] = useState('');
@@ -28,9 +28,9 @@ const ShopDetail = () =>{
     };
 
     //url 등록
-    let detailUrl = "http://localhost:9001/shop/detail?num="+num;
-    let photoUrl = "http://localhost:9001/save/";
-    let deleteUrl = "http://localhost:9001/shop/delete?num="+num;
+    let detailUrl = SPRING_URL+"shop/detail?num="+num;
+    let photoUrl = SPRING_URL+"save/";
+    let deleteUrl = SPRING_URL+"shop/delete?num="+num;
 
     //스프링으로부터 num에 해당하는 data 받기
     const onDataReceive = () =>{
@@ -46,7 +46,7 @@ const ShopDetail = () =>{
     //삭제시 호출할 함수
     const onDelete=()=>{
         console.log("delete")
-       
+
         axios.delete(deleteUrl)
         .then(res=>{
             //삭제후 목록으로이동
@@ -99,16 +99,16 @@ const ShopDetail = () =>{
                             <h3>상품명 : {data.sangpum}</h3>
                         </td>
                     </tr>
-                    <tr>
-                        <td><h3>수량 : {data.su}</h3></td>
-                    </tr>
-                    <tr>
-                        <td><h3>단가 : {data.dan}</h3></td>
-                    </tr>
-                    <tr>
-                        <td><h3>입고일 : {data.ipgoday}</h3></td>
-                    </tr>
-                    <tr>
+                        <tr>
+                            <td><h3>수량 : {data.su}</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>단가 : {data.dan}</h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>입고일 : {data.ipgoday}</h3></td>
+                        </tr>
+                        <tr>
                         <td colSpan='2' align="center" className="detail">
                             <button type="button" className="btn btn-info"
                             onClick={()=>{
@@ -118,7 +118,10 @@ const ShopDetail = () =>{
                             onClick={()=>{
                                 navi("/shop/form")
                             }}>상품추가</button>
-                            <button type="button" className="btn btn-success">수정</button>
+                            <button type="button" className="btn btn-success"
+                            onClick={()=>{
+                                navi(`/shop/updateform/${num}`);
+                            }}>수정</button>
                             <button type="button" className="btn btn-warning"
                             onClick={handleClickOpen}>삭제</button>
                         </td>
