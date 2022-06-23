@@ -15,6 +15,7 @@ import BoardForm from "./board/BoardForm";
 import BoardList1 from "./board/BoardList1";
 import BoardList2 from "./board/BoardList2";
 import BoardList3 from "./board/BoardList3";
+import BoardDetail from "./board/BoardDetail";
 
 const RouteMain=()=>{
     return(
@@ -34,8 +35,9 @@ const RouteMain=()=>{
                 <Route path="/memo" element={<Memo/>}/>
 
                 {/* board */}
-                <Route path="/board/list" element={<Board/>}/>
+                <Route path="/board/list/:currentPage" element={<Board/>}/>
                 <Route path="/board/form" element={<BoardForm/>}/>
+                <Route path="/board/detail/:num/:currentPage" element={<BoardDetail/>}/>
                 
                 <Route path="/board/list1" element={<BoardList1/>}/>
                 <Route path="/board/list2" element={<BoardList2/>}/>

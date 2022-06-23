@@ -47,7 +47,8 @@ const Menu=()=>{
                 <li><NavLink to='/login'>Login</NavLink>&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li><NavLink to='/member/form'>Member</NavLink>&nbsp;&nbsp;&nbsp;&nbsp;</li>
                 <li><NavLink to='/shop/list'>Shop</NavLink>&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                <li><NavLink to='/board/list'>Board</NavLink>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                <li><NavLink to='/board/list/1'>Board</NavLink>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                
                 <li><NavLink to='/about'>About</NavLink></li>
             </ul>)}
                 </AppBar>
